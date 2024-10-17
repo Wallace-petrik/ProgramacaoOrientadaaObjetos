@@ -1,18 +1,21 @@
 import java.util.Scanner;
 public class Interface {
 
+    protected int valor;
+
     public Interface() {
+        this.valor = 0;
     }
 
-    Scanner teclado = new Scanner(System.in);
+    public void lerInt (){
 
-    public int lerInt (){
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Digite um número inteiro");
+        valor = teclado.nextInt();
 
-        int valorInt;
-        System.out.printf("Digite um número inteiro");
-        valorInt = teclado.nextInt();
-
-        return  valorInt;
     }
 
+    public void escreverInt(){
+        System.out.printf("Int: "+valor);
+    }
 }
