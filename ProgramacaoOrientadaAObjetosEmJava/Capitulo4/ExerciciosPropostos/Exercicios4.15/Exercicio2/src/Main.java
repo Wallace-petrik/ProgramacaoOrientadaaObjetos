@@ -4,5 +4,7 @@ public class Main {
         Interface minhaInterface = new Interface();
         minhaInterface.lerInt();
         minhaInterface.escreverInt();
+        minhaInterface.lerDouble();
+        minhaInterface.escreverDouble();
     }
 }
