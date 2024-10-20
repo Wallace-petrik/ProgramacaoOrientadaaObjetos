@@ -4,11 +4,13 @@ public class Interface {
     private int valorInt;
     private double valorDouble;
     private char valorChar;
+    private String valorString;
 
     public Interface() {
         this.valorInt = 0;
         this.valorDouble = 0.0d;
         this.valorChar = '\u0000';
+        this.valorString = "\u0000";
     }
 
     Scanner teclado = new Scanner(System.in);
@@ -49,6 +51,18 @@ public class Interface {
     public void escrverChar(){
 
         System.out.println("Char: "+valorChar);
+
+    }
+
+    public void lerString(){
+
+        System.out.println("Digite uma String: ");
+        valorString = teclado.nextLine();
+
+    }
+    public void escverString(){
+
+        System.out.println("String: "+valorString);
 
     }
 
