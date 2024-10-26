@@ -28,4 +28,10 @@ public class Ponto {
         distancia = Math.sqrt((x-outroX)*(x-outroX) + (y-outroY)*y+outroY);
         return  distancia;
     }
+
+    public double fornecaDistanciaAteOrigin (){
+        double distancia;
+        distancia = Math.sqrt(Math.pow(x,2)+Math.pow(y,2));
+        return distancia;
+    }
 }
