@@ -39,4 +39,12 @@ public class Ponto {
         this.x+= valorDeDeslocamento;
     }
 
+    public double calcularCoeficienteAngular (Ponto outroPonto){
+        double coeficienteAngular = 0;
+
+        coeficienteAngular = (outroPonto.y-y)/(outroPonto.x-x);
+
+        return coeficienteAngular;
+    }
+
 }
