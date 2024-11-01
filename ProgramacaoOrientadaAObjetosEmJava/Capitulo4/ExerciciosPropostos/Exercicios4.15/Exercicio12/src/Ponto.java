@@ -47,4 +47,9 @@ public class Ponto {
         return coeficienteAngular;
     }
 
+    public void novaLocalizacaoComMetodoPolares(double distancia, double angulo) {
+        this.x = distancia * Math.cos(angulo);
+        this.y = distancia * Math.sin(angulo);
+    }
+
 }

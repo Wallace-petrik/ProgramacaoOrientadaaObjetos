@@ -3,6 +3,6 @@ public class Main {
 
         Circulo umCirculo = new Circulo();
         umCirculo.receberValorRaio(4);
-        System.out.println("Valor da área do setrore:"+umCirculo.calcularAreaDoSetorCircularS(40));
+        System.out.println("Valor da área do setor:"+umCirculo.calcularAreaDoSetorCircularS(40));
     }
 }
