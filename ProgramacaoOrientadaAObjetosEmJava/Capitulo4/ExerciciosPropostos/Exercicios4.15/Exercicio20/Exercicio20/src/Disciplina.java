@@ -1,6 +1,6 @@
 public class Disciplina {
 
-    private String nomeDaDisciplina;
+    private String nomeDoAluno;
     private double media;
     private double n1, n2, n3;
 
@@ -13,23 +13,22 @@ public class Disciplina {
     }
 
     public Disciplina(String nome, Double nota1, Double nota2, Double nota3) {
-        this.nomeDaDisciplina = nome;
+        this.nomeDoAluno = nome;
         this.n1 = (nota1 >= 0 && nota1 <= 10) ? nota1 : 0;
         this.n2 = (nota2 >= 0 && nota2 <= 10) ? nota2 : 0;
         this.n3 = (nota3 >= 0 && nota3 <= 10) ? nota3 : 0;
     }
 
-    public double calcularMedia() {
+    public void calcularMedia() {
         media = (n1 * PESO_N1 + n2 * PESO_N2 + n3 * PESO_N3) / SOMA_PESOS;
-        return media;
     }
 
-    public String getNomeDaDisciplina() {
-        return nomeDaDisciplina;
+    public String getNomeDoAluno() {
+        return nomeDoAluno;
     }
 
-    public void setNomeDaDisciplina(String nomeDaDisciplina) {
-        this.nomeDaDisciplina = nomeDaDisciplina;
+    public void setNomeDoAluno(String nomeDoAluno) {
+        this.nomeDoAluno = nomeDoAluno;
     }
 
     public double getMedia() {
