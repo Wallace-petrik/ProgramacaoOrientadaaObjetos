@@ -51,5 +51,11 @@ public class Ponto {
         this.x = distancia * Math.cos(angulo);
         this.y = distancia * Math.sin(angulo);
     }
-
+    public  void reposicionarPonto(int angulo){
+        double anguloRadianos = Math.toRadians(angulo);
+        double xRotacionado  = x * Math.cos(anguloRadianos) - y * Math.sin(anguloRadianos);
+        double YRotacionado  = x * Math.sin(anguloRadianos) + y * Math.cos(anguloRadianos);
+        this.x = xRotacionado;
+        this.y = YRotacionado;
+    }
 }
