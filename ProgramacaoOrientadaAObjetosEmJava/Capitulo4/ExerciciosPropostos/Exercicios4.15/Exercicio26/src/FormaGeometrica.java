@@ -23,6 +23,9 @@ public class FormaGeometrica {
         return perimetro;
     }
 
+    public void informarTipoDeTriangulo(){
+
+    }
 
     public int getCatetoOposto() {
         return catetoOposto;
