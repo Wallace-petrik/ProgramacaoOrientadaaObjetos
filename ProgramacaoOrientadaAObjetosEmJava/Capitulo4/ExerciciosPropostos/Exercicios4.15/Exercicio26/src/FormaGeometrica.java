@@ -4,27 +4,32 @@ public class FormaGeometrica {
     private int catetoAdjacente;
     private double hipotenusa;
     private double perimetro;
-
-    public FormaGeometrica(){
-    }
+    private double areaDoTriangulo;
 
     public FormaGeometrica(int vCatetoOposto, int vCatetoAdjacente){
         this.catetoOposto = vCatetoOposto;
         this.catetoAdjacente = vCatetoAdjacente;
+        calcularHipotenusa();
+        calcularPerimetro();
+        calcularAreaDoTriangulo();
     }
 
-    public double calcularHipotenusa(){
-        hipotenusa = Math.pow(catetoOposto,2)+Math.pow(catetoAdjacente,2);
-        return hipotenusa;
+    public void calcularHipotenusa(){
+        hipotenusa = Math.sqrt(Math.pow(catetoOposto,2)+Math.pow(catetoAdjacente,2));
     }
 
-    public double calcularPerimetro(){
-        perimetro = calcularHipotenusa() + catetoOposto + catetoAdjacente;
-        return perimetro;
+    public void calcularPerimetro(){
+        perimetro = hipotenusa + catetoOposto + catetoAdjacente;
     }
 
     public void informarTipoDeTriangulo(){
+        if(catetoOposto==catetoAdjacente){
+            System.out.println("O triangulo é isósceles");
+        }else System.out.println("O triangulo não é isósceles");
+    }
 
+    public void calcularAreaDoTriangulo(){
+        areaDoTriangulo = (catetoOposto+catetoAdjacente)/2;
     }
 
     public int getCatetoOposto() {
@@ -49,5 +54,21 @@ public class FormaGeometrica {
 
     public void setHipotenusa(double hipotenusa) {
         this.hipotenusa = hipotenusa;
+    }
+
+    public double getPerimetro() {
+        return perimetro;
+    }
+
+    public double getAreaDoTriangulo() {
+        return areaDoTriangulo;
+    }
+
+    public void setPerimetro(double perimetro) {
+        this.perimetro = perimetro;
+    }
+
+    public void setAreaDoTriangulo(double areaDoTriangulo) {
+        this.areaDoTriangulo = areaDoTriangulo;
     }
 }
