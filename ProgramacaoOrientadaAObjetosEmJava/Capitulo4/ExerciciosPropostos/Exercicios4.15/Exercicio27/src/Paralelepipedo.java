@@ -47,4 +47,9 @@ public class Paralelepipedo {
         return diagonal;
     }
 
+    public double informarValorVolume(){
+        double volume = 0;
+        volume = arestaA*arestaB*arestaC;
+        return volume;
+    }
 }
