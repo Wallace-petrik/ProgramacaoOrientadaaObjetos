@@ -35,10 +35,16 @@ public class Paralelepipedo {
         this.arestaC = vArestaC;
     }
 
-    public double informarValorAreaExterna(){
-        double area = 0;
+    public int informarValorAreaExterna(){
+        int area = 0;
         area = 2*(arestaA*arestaB+arestaA*arestaC+arestaB*arestaC);
         return area;
+    }
+
+    public double informarValorDiagonal(){
+        double diagonal = 0;
+        diagonal = Math.sqrt(Math.pow(arestaA,2)+Math.pow(arestaB,2)+Math.pow(arestaC,2));
+        return diagonal;
     }
 
 }
