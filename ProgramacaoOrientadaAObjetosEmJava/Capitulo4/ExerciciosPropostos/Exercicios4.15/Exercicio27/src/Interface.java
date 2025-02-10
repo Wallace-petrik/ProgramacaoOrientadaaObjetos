@@ -12,6 +12,6 @@ public class Interface {
         return valor;
     }
     public void mostarValores(String texto){
-        JOptionPane.showMessageDialog(null,texto,"Resultados",JOptionPane.ERROR_MESSAGE);
+        JOptionPane.showMessageDialog(null,texto,"Resultados",JOptionPane.INFORMATION_MESSAGE);
     }
 }
