@@ -35,4 +35,7 @@ public class Pessoa {
     public void setIdade(int idade) {
         this.idade = idade;
     }
+    public void facaAniversario(){
+         this.idade += 1;
+    }
 }
