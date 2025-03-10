@@ -11,4 +11,28 @@ public class Pessoa {
         this.sexo = vSexo;
         this.idade = idade;
     }
+
+    public char getSexo() {
+        return sexo;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setSexo(char sexo) {
+        this.sexo = sexo;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
 }
