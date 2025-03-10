@@ -14,4 +14,8 @@ public class Interface {
     }
 
 
+    public void mostrarMedia(double media ){
+        System.out.println("Idade média das pessoas: "+media);
+    }
+
 }
