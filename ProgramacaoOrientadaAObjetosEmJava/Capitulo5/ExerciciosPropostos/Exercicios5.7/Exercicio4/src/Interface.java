@@ -10,12 +10,17 @@ public class Interface {
         int vIdade = Integer.parseInt(idade);
         char vSexo = sexo.charAt(0);
 
-        return new Pessoa();
+        return new Pessoa(nome,vSexo,vIdade);
     }
 
 
     public void mostrarMedia(double media ){
         System.out.println("Idade média das pessoas: "+media);
+    }
+
+    public char temMais(){
+        String r = JOptionPane.showInputDialog("Tem mias S/N:");
+        return r.charAt(0);
     }
 
 }
