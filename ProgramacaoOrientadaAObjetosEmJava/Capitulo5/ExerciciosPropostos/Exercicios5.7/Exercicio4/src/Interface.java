@@ -23,4 +23,6 @@ public class Interface {
         return r.charAt(0);
     }
 
+
+
 }

@@ -8,10 +8,21 @@ public class Main {
         int cont = 0;
         int contM = 0;
         char resp;
+        int qtdIdadeIguais = 0;
+        int resultado = 0;
+        int idade = 0;
 
         do{
 
             umaPessoa = umaInterface.peguePessoa();
+
+            if(umaPessoa.verificarIdadesIguais(idade) && idade!=0){
+                qtdIdadeIguais++;
+                if(qtdIdadeIguais>resultado){
+                    resultado = qtdIdadeIguais+1;
+                }
+            }
+            idade = umaPessoa.idade;
             soma += umaPessoa.getIdade();
             if(umaPessoa.sexo=='m'||umaPessoa.sexo == 'M'){
                 if(umaPessoa.idade >= 70){
@@ -27,5 +38,6 @@ public class Main {
         double meida = soma/cont;
         umaInterface.mostrarMedia(meida);
         System.out.println("Percentual de homens com mais de 70: "+percentualH);
+        System.out.printf("Temos %d idades iguais consecuitvas",resultado);
     }
 }

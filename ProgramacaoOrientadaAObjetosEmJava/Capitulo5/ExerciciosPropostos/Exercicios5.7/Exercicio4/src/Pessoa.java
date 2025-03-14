@@ -38,4 +38,12 @@ public class Pessoa {
     public void facaAniversario(){
          this.idade += 1;
     }
+
+    public boolean verificarIdadesIguais(int vIdade){
+        if (this.idade==vIdade){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }
