@@ -10,7 +10,7 @@
 ### Cursos Grátis 👨‍🏫
 * [Curso de Java para Iniciantes](https://www.youtube.com/playlist?list=PLHz_AreHm4dkI2ZdjTwZA4mPMxWTfNSpR)
 
-* [Curso de POO Java Programação Orientada a Objetos] (https://youtu.be/KlIL63MeyMY?si=3dNNTUQTqtz2jjlD)
+* [Curso de POO Java Programação Orientada a Objetos](https://youtu.be/KlIL63MeyMY?si=3dNNTUQTqtz2jjlD)
 
 ###  IDE 💻
 * [IntelliJ IDEA](https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows&code=IIC)
