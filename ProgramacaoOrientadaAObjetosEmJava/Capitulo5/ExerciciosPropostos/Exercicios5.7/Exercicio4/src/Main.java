@@ -8,21 +8,24 @@ public class Main {
         int cont = 0;
         int contM = 0;
         char resp;
-        int qtdIdadeIguais = 0;
+        int qtdIdadeIguais = 1;
         int resultado = 0;
-        int idade = 0;
+        int idade = -1;
 
         do{
 
             umaPessoa = umaInterface.peguePessoa();
 
-            if(umaPessoa.verificarIdadesIguais(idade) && idade!=0){
+            if(umaPessoa.verificarIdadesIguais(idade)){
                 qtdIdadeIguais++;
                 if(qtdIdadeIguais>resultado){
-                    resultado = qtdIdadeIguais+1;
+                    resultado = qtdIdadeIguais;
                 }
+            }else{
+                qtdIdadeIguais = 1;
             }
             idade = umaPessoa.idade;
+
             soma += umaPessoa.getIdade();
             if(umaPessoa.sexo=='m'||umaPessoa.sexo == 'M'){
                 if(umaPessoa.idade >= 70){
