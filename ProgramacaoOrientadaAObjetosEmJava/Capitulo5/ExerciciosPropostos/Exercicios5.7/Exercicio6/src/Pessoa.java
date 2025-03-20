@@ -44,7 +44,7 @@ public class Pessoa {
 
         if(sexo=='m'||sexo=='M'){
             peso = 72.7f * vAltura - 58;
-        }else{
+        }else if (sexo=='f'||sexo=='F'){
             peso = 62.1f * vAltura - 44.7f;
         }
         return peso;
