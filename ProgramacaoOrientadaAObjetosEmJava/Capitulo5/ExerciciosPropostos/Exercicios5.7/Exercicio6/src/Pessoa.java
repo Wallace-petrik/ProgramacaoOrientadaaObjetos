@@ -39,15 +39,25 @@ public class Pessoa {
         this.idade++;
     }
 
-    public float pesoIdeal(float vAltura){
+    public float pesoIdeal(float vAltura, char sexo) {
+        if (vAltura <= 0) {
+            throw new IllegalArgumentException("Altura deve ser maior que zero.");
+        }
+
         float peso = 0;
 
-        if(sexo=='m'||sexo=='M'){
+        char sexoLower = Character.toLowerCase(sexo);
+
+        if (sexoLower == 'm') {
             peso = 72.7f * vAltura - 58;
-        }else if (sexo=='f'||sexo=='F'){
+        } else if (sexoLower == 'f') {
             peso = 62.1f * vAltura - 44.7f;
+        } else {
+            throw new IllegalArgumentException("Sexo inválido. Use 'm' para masculino ou 'f' para feminino.");
         }
+
         return peso;
     }
+
 
 }
