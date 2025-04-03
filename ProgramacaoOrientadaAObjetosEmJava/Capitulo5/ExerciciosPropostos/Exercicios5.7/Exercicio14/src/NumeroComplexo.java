@@ -44,7 +44,16 @@ public class NumeroComplexo {
         somaImaginario = this.parteImaginaria+outroNumero.getParteImaginaria();
 
         return  new NumeroComplexo(somaReal,somaImaginario);
+    }
 
+    public NumeroComplexo subtracaoNumeroComplexo (NumeroComplexo outroNumero){
+        double subtracaoReal;
+        double subtracaoImaginario;
+
+        subtracaoReal = this.parteReal-outroNumero.parteReal;
+        subtracaoImaginario = this.parteImaginaria-outroNumero.parteImaginaria;
+
+        return new NumeroComplexo(subtracaoReal,subtracaoImaginario);
     }
 
 }
