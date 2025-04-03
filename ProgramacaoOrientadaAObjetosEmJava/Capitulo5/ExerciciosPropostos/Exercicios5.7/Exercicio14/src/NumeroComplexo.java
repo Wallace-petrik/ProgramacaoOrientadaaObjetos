@@ -26,4 +26,9 @@ public class NumeroComplexo {
     public void setParteReal(double parteReal) {
         this.parteReal = parteReal;
     }
+
+    public double calcularModulo(){
+        return Math.sqrt(Math.pow(parteReal,2)+Math.pow(parteImaginaria,2));
+    }
+
 }
