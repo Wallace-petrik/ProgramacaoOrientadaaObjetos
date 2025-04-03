@@ -11,6 +11,11 @@ public class NumeroComplexo {
     private double parteReal;
     private double parteImaginaria;
 
+    public NumeroComplexo(double parteReal, double parteImaginaria) {
+        this.parteReal = parteReal;
+        this.parteImaginaria = parteImaginaria;
+    }
+
     public double getParteImaginaria() {
         return parteImaginaria;
     }
@@ -29,6 +34,17 @@ public class NumeroComplexo {
 
     public double calcularModulo(){
         return Math.sqrt(Math.pow(parteReal,2)+Math.pow(parteImaginaria,2));
+    }
+
+    public NumeroComplexo somaNumeroComplexo(NumeroComplexo outroNumero){
+        double somaReal;
+        double somaImaginario;
+
+        somaReal = this.parteReal+outroNumero.getParteReal();
+        somaImaginario = this.parteImaginaria+outroNumero.getParteImaginaria();
+
+        return  new NumeroComplexo(somaReal,somaImaginario);
+
     }
 
 }
