@@ -56,4 +56,9 @@ public class NumeroComplexo {
         return new NumeroComplexo(subtracaoReal,subtracaoImaginario);
     }
 
+    public NumeroComplexo multiplicacaoNumeroComplexo(NumeroComplexo outroNumero) {
+        double real = this.parteReal * outroNumero.parteReal - this.parteImaginaria * outroNumero.parteImaginaria;
+        double imaginaria = this.parteReal * outroNumero.parteImaginaria + this.parteImaginaria * outroNumero.parteReal;
+        return new NumeroComplexo(real, imaginaria);
+    }
 }
