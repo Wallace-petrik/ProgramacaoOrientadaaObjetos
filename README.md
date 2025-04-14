@@ -18,8 +18,6 @@
 
 ###  Obs 🚩
 * O diretório ProgramacaoOrientadaAObjetosEmJava contem os exercícios no livro Programacao Orientada A Objetos Em Java
-  
-### [Acesse meu perfil no portfólio](https://devpetrik.com.br/)  | [Acesse meu perfil no Linkedin](https://www.linkedin.com/in/wallace-petrik-45b9471b4/)
 
 
 
