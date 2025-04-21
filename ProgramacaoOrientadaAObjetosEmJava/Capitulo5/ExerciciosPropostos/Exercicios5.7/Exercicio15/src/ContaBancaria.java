@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ContaBancaria {
 
     private String nome;
@@ -48,4 +50,20 @@ public class ContaBancaria {
     public void setLimiteSaldoNegativo(double limiteSaldoNegativo) {
         this.limiteSaldoNegativo = limiteSaldoNegativo;
     }
+
+    public void deposito(){
+        double valorDoDeposito;
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.println("Digite o valor do deposisto: ");
+        valorDoDeposito = teclado.nextDouble();
+
+        if(valorDoDeposito>0){
+            this.saldo+=valorDoDeposito;
+            System.out.println("Deposito realizado com sucesso!!!");
+        }else{
+            System.out.println("Valor do deposito invalidop!!!");
+        }
+    }
+
 }
