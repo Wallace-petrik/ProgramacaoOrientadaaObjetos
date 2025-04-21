@@ -17,4 +17,35 @@ public class ContaBancaria {
         this.nome = vNome;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public double getLimiteSaldoNegativo() {
+        return limiteSaldoNegativo;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
+    public void setLimiteSaldoNegativo(double limiteSaldoNegativo) {
+        this.limiteSaldoNegativo = limiteSaldoNegativo;
+    }
 }
