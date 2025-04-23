@@ -59,10 +59,7 @@ public class ContaBancaria {
         valorDoDeposito = teclado.nextDouble();
 
         if(valorDoDeposito>0){
-            if(limiteSaldoNegativo<50){
-                valorDoDeposito-=(50-limiteSaldoNegativo);
-
-            }
+            saldo += valorDoDeposito;
             System.out.println("Deposito realizado com sucesso!!!");
         }else{
             System.out.println("Valor do deposito invalidop!!!");
@@ -78,7 +75,7 @@ public class ContaBancaria {
         if(saque>limiteSaldoNegativo+saldo){
             System.out.println("Saldo insuficiente para saque");
         } else if (saque>saldo) {
-:q
+
             System.out.println("Saque realizado com sucesso!!!");
             System.out.println("Você utilizou ");
         }
