@@ -7,11 +7,11 @@ public class ContaBancaria {
     private double saldo;
     private double limiteSaldoNegativo;
 
-    public ContaBancaria(String vNome, int vId, double vSaldo, double vLimiteSaldoNegativo){
+    public ContaBancaria(String vNome, int vId, double vSaldo){
         this.nome = vNome;
         this.id = vId;
         this.saldo = vSaldo;
-        this.limiteSaldoNegativo = vLimiteSaldoNegativo;
+        this.limiteSaldoNegativo = 50;
     }
 
     public ContaBancaria(int vId, String vNome){
@@ -59,11 +59,28 @@ public class ContaBancaria {
         valorDoDeposito = teclado.nextDouble();
 
         if(valorDoDeposito>0){
-            this.saldo+=valorDoDeposito;
+            if(limiteSaldoNegativo<50){
+                valorDoDeposito-=(50-limiteSaldoNegativo);
+
+            }
             System.out.println("Deposito realizado com sucesso!!!");
         }else{
             System.out.println("Valor do deposito invalidop!!!");
         }
     }
 
+    public void saque(){
+        Scanner teclado = new Scanner(System.in);
+        double saque;
+        System.out.println("Digite o valor do saque: ");
+        saque = teclado.nextDouble();
+
+        if(saque>limiteSaldoNegativo+saldo){
+            System.out.println("Saldo insuficiente para saque");
+        } else if (saque>saldo) {
+:q
+            System.out.println("Saque realizado com sucesso!!!");
+            System.out.println("Você utilizou ");
+        }
+    }
 }
