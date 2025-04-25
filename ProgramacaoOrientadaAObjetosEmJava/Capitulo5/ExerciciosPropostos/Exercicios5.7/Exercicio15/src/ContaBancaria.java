@@ -58,7 +58,7 @@ public class ContaBancaria {
         System.out.println("Digite o valor do deposisto: ");
         valorDoDeposito = teclado.nextDouble();
 
-        if(valorDoDeposito>0){
+        if(valorDoDeposito>=0){
             saldo += valorDoDeposito;
             System.out.println("Deposito realizado com sucesso!!!");
         }else{
@@ -72,12 +72,16 @@ public class ContaBancaria {
         System.out.println("Digite o valor do saque: ");
         saque = teclado.nextDouble();
 
-        if(saque>limiteSaldoNegativo+saldo){
-            System.out.println("Saldo insuficiente para saque");
-        } else if (saque>saldo) {
-
-            System.out.println("Saque realizado com sucesso!!!");
-            System.out.println("Você utilizou ");
+        if(saque<=saldo){
+            saldo -= saque;
+            System.out.println("Seu saldo atual é de "+saldo);
+        }else{
+            if (saque<=saldo+limiteSaldoNegativo && limiteSaldoNegativo>=0){
+                saldo -= saque;
+                limiteSaldoNegativo -=saldo;
+            }else{
+                System.out.println("Você ultrapassou o seu saldo e o limite do cheque especial.");
+            }
         }
     }
 }
