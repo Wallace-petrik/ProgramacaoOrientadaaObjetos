@@ -51,5 +51,7 @@ public class ContaBancaria {
         this.limiteSaldoNegativo = limiteSaldoNegativo;
     }
 
+    public void saque(){
 
+    }
 }
