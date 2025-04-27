@@ -51,11 +51,18 @@ public class ContaBancaria {
         this.limiteSaldoNegativo = limiteSaldoNegativo;
     }
 
-    public void deposito(){
+    private float entradaDeDados(String tipoDeEntrada){
+        float valor = 0;
+        Scanner teclado = new Scanner(System.in);
+        valor = teclado.nextFloat();
+        return  valor;
+    }
+
+    public void deposito(float valorDeposito){
 
     }
 
-    public void saque(){
+    public void saque(float valorSaque){
 
     }
 }
