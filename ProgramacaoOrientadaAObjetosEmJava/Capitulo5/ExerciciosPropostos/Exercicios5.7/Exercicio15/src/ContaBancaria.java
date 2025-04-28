@@ -69,5 +69,19 @@ public class ContaBancaria {
         }
     }
 
-
+    public void saque(float valorSaque){
+        if(valorSaque>0){
+            if(saldo-valorSaque>-50){
+                saldo -= valorSaque;
+                System.out.println("Saque realizado com sucesso !!!");
+                if(saldo<0){
+                    System.out.println("Você emtrou no cheque especial !!!");
+                }
+            }else{
+                System.out.println("Não é possivel realizar o saque () !!!");
+            }
+        }else{
+            System.out.println("Você não pode fazer um saque de valores negativos !!!");
+        }
+    }
 }
