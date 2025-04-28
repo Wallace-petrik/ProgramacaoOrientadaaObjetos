@@ -58,27 +58,16 @@ public class ContaBancaria {
         return  valor;
     }
 
-    private float chequeEspecial(float valores, int tipoDeOperacao){
-        // 1 para deposito e 2 para saque.
-        if(tipoDeOperacao==1){
-            if(valores>=50){
-                if(chequeEspecial!=50){
-                    chequeEspecial += 50-chequeEspecial;
-                }
-            }else{
-
-            }
-        }else if (tipoDeOperacao==2){
-
-        }
-        return 0;
-    }
 
     public void deposito(float valorDeposito){
 
+        if(valorDeposito>0){
+            this.saldo = valorDeposito;
+            System.out.println("Deposito realizado com sucesso !!!");
+        }else{
+            System.out.println("O deposito não pode ser realziado !!!");
+        }
     }
 
-    public void saque(float valorSaque){
 
-    }
 }
