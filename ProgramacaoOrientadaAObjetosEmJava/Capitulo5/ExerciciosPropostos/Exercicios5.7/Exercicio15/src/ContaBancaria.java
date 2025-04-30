@@ -62,7 +62,7 @@ public class ContaBancaria {
     public void deposito(float valorDeposito){
 
         if(valorDeposito>0){
-            this.saldo = valorDeposito;
+            this.saldo += valorDeposito;
             System.out.println("Deposito realizado com sucesso !!!");
         }else{
             System.out.println("O deposito não pode ser realziado !!!");
