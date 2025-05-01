@@ -24,4 +24,12 @@ public class Ponto {
         this.x = vX;
         this.y = vY;
     }
+
+    public double fornecaDistanciaAte(Ponto outroPonto){
+        double outroX, outroY, distancia;
+        outroX = outroPonto.getX();
+        outroY = outroPonto.getY();
+        distancia = Math.sqrt((x-outroX)*(x-outroX) + (y-outroY)*(y-outroY));
+        return distancia;
+    }
 }
