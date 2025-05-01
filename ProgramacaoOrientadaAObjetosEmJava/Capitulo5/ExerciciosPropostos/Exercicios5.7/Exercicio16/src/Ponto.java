@@ -20,5 +20,8 @@ public class Ponto {
         return y;
     }
 
-
+    public void redefinaSe(double vX,double vY){
+        this.x = vX;
+        this.y = vY;
+    }
 }
