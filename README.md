@@ -1,4 +1,4 @@
-# ProgramacaoOrientadaaObjetos
+# Programação Orientada a Objetos
 ## Este repositório visa compartilhar materiais de POO
 
 ### O diretório ProgramacaoOrientadaaObjetos e destinado para os seguintes conteúdos 
