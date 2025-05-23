@@ -1,4 +1,5 @@
 public class Ponto {
+
     protected double x;
     protected double y;
 
